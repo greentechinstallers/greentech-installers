@@ -113,3 +113,17 @@ footer {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* limit gallery size on large screens */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
